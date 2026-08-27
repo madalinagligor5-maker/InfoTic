@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog360.ro - Platformă Educațională Informatică & ICT</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                <span class="logo-text">Catalog<span>360</span>.ro</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#acasa" class="nav-link active">Acasă</a></li>
+                <li><a href="#clase" class="nav-link">Clase</a></li>
+                <li><a href="#resurse" class="nav-link">Resurse</a></li>
+                <li><a href="#despre" class="nav-link">Despre</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#autentificare" class="btn btn-primary">Autentificare</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="acasa">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <i class="fas fa-star"></i>
+                    <span>Platformă Educațională Premium</span>
+                </div>
+                <h1 class="hero-title">
+                    Învață <span class="highlight">Informatică</span> & <span class="highlight">ICT</span> pentru Clasele V-VIII
+                </h1>
+                <p class="hero-subtitle">
+                    Descoperă o experiență educațională modernă, cu lecții interactive, 
+                    exerciții practice și proiecte captivante adaptate curriculumului românesc.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#clase" class="btn btn-primary btn-lg">
+                        <i class="fas fa-book-open"></i>
+                        Începe Acum
+                    </a>
+                    <a href="#demo" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        Vezi Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Lecții</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Exerciții</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Elevi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mascot-container">
+                    <div class="mascot-wrapper">
+                        <!-- SVG Mascot - Bit the Robot -->
+                        <svg class="mascot-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Glow -->
+                            <defs>
+                                <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0"/>
+                                </radialGradient>
+                                <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3b82f6"/>
+                                    <stop offset="100%" style="stop-color:#1d4ed8"/>
+                                </linearGradient>
+                                <linearGradient id="screenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1e293b"/>
+                                    <stop offset="100%" style="stop-color:#0f172a"/>
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Glow Effect -->
+                            <ellipse cx="200" cy="280" rx="180" ry="200" fill="url(#glowGradient)"/>
+                            
+                            <!-- Body -->
+                            <rect x="120" y="180" width="160" height="200" rx="30" fill="url(#bodyGradient)" stroke="#1e40af" stroke-width="3"/>
+                            
+                            <!-- Screen/Face -->
+                            <rect x="140" y="200" width="120" height="140" rx="15" fill="url(#screenGradient)" stroke="#3b82f6" stroke-width="2"/>
+                            
+                            <!-- Eyes -->
+                            <circle class="eye eye-left" cx="175" cy="250" r="18" fill="#60a5fa"/>
+                            <circle class="eye eye-right" cx="225" cy="250" r="18" fill="#60a5fa"/>
+                            <circle class="eye-pupil eye-pupil-left" cx="180" cy="245" r="8" fill="#ffffff"/>
+                            <circle class="eye-pupil eye-pupil-right" cx="230" cy="245" r="8" fill="#ffffff"/>
+                            
+                            <!-- Smile -->
+                            <path class="mouth" d="M 170 280 Q 200 300 230 280" stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            
+                            <!-- Antenna -->
+                            <line x1="200" y1="180" x2="200" y2="120" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+                            <circle cx="200" cy="110" r="15" fill="#ef4444" class="antenna-light"/>
+                            <circle cx="200" cy="110" r="8" fill="#fca5a5" class="antenna-glow"/>
+                            
+                            <!-- Arms -->
+                            <path class="arm arm-left" d="M 120 250 Q 80 280 60 240" stroke="#3b82f6" stroke-width="12" fill="none" stroke-linecap="round"/>
+                            <path class="arm arm-right" d="M 280 250 Q 320 280 340 240" stroke="#3b82f6" stroke-width="12" fill="none" stroke-linecap="round"/>
+                            
+                            <!-- Hands -->
+                            <circle class="hand hand-left" cx="60" cy="240" r="20" fill="#60a5fa"/>
+                            <circle class="hand hand-right" cx="340" cy="240" r="20" fill="#60a5fa"/>
+                            
+                            <!-- Holding Laptop -->
+                            <g class="laptop">
+                                <rect x="140" y="320" width="120" height="80" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+                                <rect x="150" y="330" width="100" height="60" fill="#0f172a"/>
+                                <rect x="130" y="400" width="140" height="10" rx="3" fill="#334155"/>
+                                <!-- Code on screen -->
+                                <text x="160" y="350" fill="#22c55e" font-family="JetBrains Mono" font-size="10">print()</text>
+                                <text x="160" y="365" fill="#60a5fa" font-family="JetBrains Mono" font-size="10">if/else</text>
+                                <text x="160" y="380" fill="#f59e0b" font-family="JetBrains Mono" font-size="10">for i in</text>
+                            </g>
+                            
+                            <!-- Legs -->
+                            <rect x="140" y="380" width="35" height="60" rx="15" fill="#1d4ed8"/>
+                            <rect x="225" y="380" width="35" height="60" rx="15" fill="#1d4ed8"/>
+                            
+                            <!-- Feet -->
+                            <ellipse cx="157" cy="445" rx="25" ry="12" fill="#3b82f6"/>
+                            <ellipse cx="243" cy="445" rx="25" ry="12" fill="#3b82f6"/>
+                            
+                            <!-- Binary Code Decoration -->
+                            <text class="binary binary-1" x="40" y="150" fill="#2563eb" font-family="JetBrains Mono" font-size="14" opacity="0.6">101</text>
+                            <text class="binary binary-2" x="330" y="180" fill="#2563eb" font-family="JetBrains Mono" font-size="14" opacity="0.6">010</text>
+                            <text class="binary binary-3" x="30" y="350" fill="#2563eb" font-family="JetBrains Mono" font-size="14" opacity="0.6">110</text>
+                            <text class="binary binary-4" x="340" y="380" fill="#2563eb" font-family="JetBrains Mono" font-size="14" opacity="0.6">001</text>
+                        </svg>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-element float-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-element float-2">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="floating-element float-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C480,120 960,0 1440,64 L1440,120 L0,120 Z" fill="#f8fafc"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes-section" id="clase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Curriculum Național</span>
+                <h2 class="section-title">Alege Clasa Ta</h2>
+                <p class="section-subtitle">
+                    Conținut educațional structurat pe clase, conform programei școlare românești
+                </p>
+            </div>
+            
+            <div class="classes-grid">
+                <!-- Class 5 Card -->
+                <div class="class-card" data-class="5">
+                    <div class="class-card-header">
+                        <div class="class-icon">
+                            <i class="fas fa-shapes"></i>
+                        </div>
+                        <div class="class-level">Clasa a V-a</div>
+                    </div>
+                    <div class="class-card-body">
+                        <h3>Fundamentele Algoritmilor</h3>
+                        <ul class="class-topics">
+                            <li><i class="fas fa-check"></i> Descrierea algoritmilor</li>
+                            <li><i class="fas fa-check"></i> Scheme logice</li>
+                            <li><i class="fas fa-check"></i> Operații de bază</li>
+                            <li><i class="fas fa-check"></i> Introducere în Scratch</li>
+                        </ul>
+                    </div>
+                    <div class="class-card-footer">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <a href="#" class="btn btn-class">Începe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Class 6 Card -->
+                <div class="class-card" data-class="6">
+                    <div class="class-card-header">
+                        <div class="class-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="class-level">Clasa a VI-a</div>
+                    </div>
+                    <div class="class-card-body">
+                        <h3>Algoritmi și Programare</h3>
+                        <ul class="class-topics">
+                            <li><i class="fas fa-check"></i> Structuri decizionale</li>
+                            <li><i class="fas fa-check"></i> Cicluri (for, while)</li>
+                            <li><i class="fas fa-check"></i> Vectori (tablouri)</li>
+                            <li><i class="fas fa-check"></i> Python de bază</li>
+                        </ul>
+                    </div>
+                    <div class="class-card-footer">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <a href="#" class="btn btn-class">Începe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Class 7 Card -->
+                <div class="class-card" data-class="7">
+                    <div class="class-card-header">
+                        <div class="class-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="class-level">Clasa a VII-a</div>
+                    </div>
+                    <div class="class-card-body">
+                        <h3>Programare Avansată</h3>
+                        <ul class="class-topics">
+                            <li><i class="fas fa-check"></i> Funcții și proceduri</li>
+                            <li><i class="fas fa-check"></i> Matrice și liste</li>
+                            <li><i class="fas fa-check"></i> Algoritmi de sortare</li>
+                            <li><i class="fas fa-check"></i> Baze de date simple</li>
+                        </ul>
+                    </div>
+                    <div class="class-card-footer">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <a href="#" class="btn btn-class">Începe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Class 8 Card -->
+                <div class="class-card" data-class="8">
+                    <div class="class-card-header">
+                        <div class="class-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="class-level">Clasa a VIII-a</div>
+                    </div>
+                    <div class="class-card-body">
+                        <h3>Pregătire Evaluare</h3>
+                        <ul class="class-topics">
+                            <li><i class="fas fa-check"></i> Recursivitate</li>
+                            <li><i class="fas fa-check"></i> Grafuri și arbori</li>
+                            <li><i class="fas fa-check"></i> Proiecte complexe</li>
+                            <li><i class="fas fa-check"></i> Teste evaluare națională</li>
+                        </ul>
+                    </div>
+                    <div class="class-card-footer">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                        <a href="#" class="btn btn-class">Începe <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="resurse">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">De Ce Catalog360?</span>
+                <h2 class="section-title">Resurse Educaționale Complete</h2>
+                <p class="section-subtitle">
+                    Tot ce ai nevoie pentru a excela la informatică și ICT
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Lecții Interactive</h3>
+                    <p>Explicații clare, exemple practice și animații care fac învățarea plăcută</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Exerciții Practice</h3>
+                    <p>Probleme gradate ca dificultate, cu feedback instantaneu și soluții detaliate</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gamification</h3>
+                    <p>Sistem de puncte, badge-uri și clasamente pentru a menține motivația</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>Proiecte Reale</h3>
+                    <p>Aplicații practice pe care le poți construi și adăuga la portofoliu</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Tutoriale</h3>
+                    <p>Lecții video pas cu pas pentru fiecare concept important</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Statistici detaliate despre progresul tău și recomandări personalizate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="despre">
+        <div class="container about-container">
+            <div class="about-content">
+                <span class="section-badge">Despre Noi</span>
+                <h2 class="section-title">Misiunea Noastră</h2>
+                <p class="about-text">
+                    Catalog360.ro este o platformă educațională dedicată elevilor de gimnaziu 
+                    care doresc să învețe informatică și ICT într-un mod modern și interactiv.
+                </p>
+                <p class="about-text">
+                    Credem că programarea poate fi accesibilă și distractivă pentru toți elevii. 
+                    Prin conținut adaptat curriculumului românesc și metode pedagogice inovatoare, 
+                    ne propunem să formăm viitorii specialiști IT ai României.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Conținut certificat</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <span>Comunitate activă</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Rezultate dovedite</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">Contactează-ne</a>
+            </div>
+            <div class="about-image">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">exemplu.py</span>
+                    </div>
+                    <pre><code class="language-python"><span class="keyword">def</span> <span class="function">salut</span>(nume):
+    <span class="string">"""Funcție de salut personalizat"""</span>
+    mesaj = <span class="string">f"Salut, {nume}! Bine ai venit la Catalog360!"</span>
+    <span class="keyword">return</span> mesaj
+
+<span class="comment"># Exemplu de utilizare</span>
+elev = <span class="string">"Andrei"</span>
+print(salut(elev))
+
+<span class="comment"># Output: Salut, Andrei! Bine ai venit la Catalog360!</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Hai să Vorbim!</h2>
+                <p class="section-subtitle">
+                    Ai întrebări? Suntem aici să te ajutăm
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@catalog360.ro</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+40 7XX XXX XXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Locație</h4>
+                            <p>București, România</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="nume">Nume</label>
+                        <input type="text" id="nume" name="nume" required placeholder="Numele tău">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="email@exemplu.ro">
+                    </div>
+                    <div class="form-group">
+                        <label for="mesaj">Mesaj</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" required placeholder="Scrie mesajul tău..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i>
+                        Trimite Mesaj
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="logo-text">Catalog<span>360</span>.ro</span>
+                    </a>
+                    <p>
+                        Platformă educațională modernă pentru învățarea informaticii 
+                        și ICT în clasele V-VIII.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Link-uri Utile</h4>
+                    <ul>
+                        <li><a href="#acasa">Acasă</a></li>
+                        <li><a href="#clase">Clase</a></li>
+                        <li><a href="#resurse">Resurse</a></li>
+                        <li><a href="#despre">Despre</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resurse</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Ghid Începători</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Suport</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Abonează-te pentru noutăți și resurse gratuite</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email-ul tău" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Catalog360.ro. Toate drepturile rezervate.</p>
+                <div class="footer-legal">
+                    <a href="#">Termeni și Condiții</a>
+                    <a href="#">Politica de Confidențialitate</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
